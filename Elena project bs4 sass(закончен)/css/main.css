@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "belinda";
+  src: url("../fonts/belinda.otf") format("opentype"); }
+.btn {
+  color: #ffffff;
+  background-color: #50c3af;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 38px; }
+  .btn_copy {
+    padding: 10px 50px;
+    margin-top: 60px;
+    margin-bottom: 120px; }
+  .btn_read-more {
+    font-size: 14px;
+    text-transform: none;
+    padding: 7px 17px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; }
+
+li {
+  list-style: none; }
+
+header {
+  color: #ffffff; }
+  header .banner {
+    background: url(../img/background.png) no-repeat 50% 0; }
+    @media screen and (min-width: 1200px) {
+      header .banner {
+        background-size: 100%; } }
+    @media screen and (max-width: 485px) {
+      header .banner {
+        margin: 0;
+        padding: 0; } }
+    @media screen and (max-width: 456px) {
+      header .banner {
+        margin: 0;
+        padding: 0; } }
+  @media screen and (max-width: 990px) {
+    header .row {
+      position: relative; } }
+  @media screen and (max-width: 490px) {
+    header .row {
+      margin: 0; } }
+  header .logo {
+    font-family: "belinda", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 400;
+    margin-top: 55px;
+    margin-bottom: 15px; }
+    @media screen and (max-width: 990px) {
+      header .logo {
+        margin-bottom: 0px; } }
+  @media screen and (max-width: 990px) {
+    header .navbar {
+      position: absolute;
+      left: 5px; } }
+  @media screen and (max-width: 990px) {
+    header .navbar-nav {
+      background-color: #eaeaeb; } }
+  header .navbar-nav .nav-link {
+    color: #50c3af; }
+  header .nav-link {
+    color: #ffffff;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    opasity: 1 !important;
+    position: relative; }
+  header h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+    margin-top: 60px; }
+    @media screen and (max-width: 530px) {
+      header h1 {
+        font-size: 43px; } }
+  header p {
+    width: 480px;
+    font-family: #50c3af;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 25px;
+    overflow: hidden; }
+    @media screen and (max-width: 530px) {
+      header p {
+        font-size: 13px; } }
+    header p:before, header p:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      position: relative;
+      opacity: 0.24; }
+      @media screen and (max-width: 485px) {
+        header p:before, header p:after {
+          display: none; } }
+    header p:before {
+      margin-left: -100%;
+      left: -32px; }
+    header p:after {
+      margin-right: -100%;
+      right: -32px; }
+
+main {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px; }
+  main .cards {
+    background-color: #eaeaeb; }
+  main .card {
+    margin-top: 42px;
+    border: none;
+    background-color: #eaeaeb;
+    margin-bottom: 58px; }
+    main .card h5 {
+      color: "Ubuntu", sans-serif;
+      font-family: "PT Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(41, 48, 56, 0.06);
+      padding: 15px 21px; }
+    main .card p {
+      color: #787b80;
+      font-weight: 400;
+      line-height: 24px; }
+
+.cards-2 {
+  background-color: #f5f5f5;
+  padding-top: 55px; }
+  .cards-2 .card-body {
+    padding: 0;
+    background-color: #f5f5f5; }
+    .cards-2 .card-body h5 {
+      margin-top: 26px;
+      padding-left: 0; }
+    .cards-2 .card-body p {
+      padding-top: 20px;
+      padding-bottom: 24px; }
+
+.cards-3 {
+  background-color: #eaeaeb; }
+  .cards-3 .card-body {
+    padding: 0; }
+    .cards-3 .card-body h5 {
+      padding-left: 0; }
+      .cards-3 .card-body h5:before {
+        content: url(../img/cards-3-1.png);
+        position: relative;
+        padding-right: 15px;
+        vertical-align: middle;
+        top: 4px; }
+
+.cards-4 .check {
+  color: #50c3af !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  cursor: pointer; }
+
+.cards-5 .card .card-body h5:before {
+  content: url(../img/cards5-1.png); }
+.cards-5 .card .card-body .last:before {
+  content: url(../img/cards5-2.png); }
+
+.cards-6 .card h5 {
+  padding-top: 0; }
+
+.template {
+  background-color: #50c3af; }
+  .template h5 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+    margin-top: 33px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    cursor: default; }
+    .template h5:before {
+      content: url(../img/star.png);
+      position: relative;
+      padding-right: 15px;
+      vertical-align: middle; }
+  .template .template-logo {
+    opacity: 0.7;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    cursor: default;
+    margin-left: 0;
+    margin-right: 0; }
+    .template .template-logo_text1 {
+      font-family: "belinda", sans-serif;
+      padding: 10px 10px; }
+    .template .template-logo_text2 {
+      font-family: "PT Sans", sans-serif;
+      font-style: italic;
+      padding: 10px 10px; }
+    .template .template-logo_text3 {
+      font-family: "Ubuntu", sans-serif;
+      padding: 10px 10px; }
+    .template .template-logo_text4 {
+      font-family: "Comic Sans";
+      font-weight: bold;
+      padding: 10px 10px; }
+
+footer .container {
+  background-color: #f5f5f5; }
+  footer .container .copyright {
+    margin-top: 15px;
+    color: #aaacaf;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px; }
+  footer .container .social {
+    margin-top: 15px; }
+    footer .container .social_a {
+      padding: 4px; }
+  footer .container .tw {
+    padding-right: 0;
+    padding-left: 9px; }

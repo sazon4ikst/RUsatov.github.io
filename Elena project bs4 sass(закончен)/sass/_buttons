@@ -1,0 +1,11 @@
+.btn
+ // Style for "GET YOUR C"
+ width: 140px
+ height: 11px
+ color: $white
+ background-color: $main
+ font-family: "PT Sans"
+ font-size: 15px
+ font-weight: 700
+ line-height: 24px
+ text-transform: uppercase
