@@ -7,5 +7,5 @@
 
 [Третий проект SportMarket](https://rusatov.github.io/project4/ "Многостраничный сайт спорт-товаров") - выполнен с помощью препроцессора SCSS и Bootstrap 4. Так же натянут на WordPress при помощи плагина WooCommerce. Сборщик Gulp.
 
-[Четвертый проект Мебель-PRO.43](https://rusatov.github.io/project5/ "Лендинг магазина шкафов-купе") - выполнен с помощью препроцессора SCSS и Bootstrap 4. Сборщик Gulp. Просили выполнить без адаптива. В папке есть файл [catalog.html](RUsatov.github.io/project5/catalog.html) для демонстрации адаптивного дизайна. Есть валидация формы.
+[Четвертый проект Мебель-PRO.43](https://rusatov.github.io/project5/ "Лендинг магазина шкафов-купе") - выполнен с помощью препроцессора SCSS и Bootstrap 4. Сборщик Gulp. Просили выполнить без адаптива. В папке есть файл [catalog.html](https://rusatov.github.io/project5/catalog.html) для демонстрации адаптивного дизайна. Есть валидация формы.
 
