@@ -1,5 +1,5 @@
 # Роман Усатов
-Портфолио
+### Портфолио
 
 [Первый проект](https://rusatov.github.io/Elena%20project%20bs4%20sass(%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D1%87%D0%B5%D0%BD)/ "Блог") - выполнен с помощью препроцессора SASS и Bootstrap 4. [Исходные файлы](https://github.com/RUsatov/RUsatov.github.io/tree/master/Elena%20project%20bs4%20sass(%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D1%87%D0%B5%D0%BD))
 
@@ -11,4 +11,4 @@
 
 [Пятый проект TELE2](https://rusatov.github.io/project6/ "Валидация форм") - выполнен с помощью препроцессора SCSS и Bootstrap 4. Сборщик Gulp. Основная задача была сделать валидацию форм. Есть адаптив. [Исходные файлы](https://github.com/RUsatov/RUsatov.github.io/tree/master/project6)
 
-Все исходные файлы вы можете посмотреть [здесь](https://github.com/RUsatov/RUsatov.github.io).
+Ссылка на мой [репозиторий](https://github.com/RUsatov/RUsatov.github.io).
