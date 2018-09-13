@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Font Awersome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    <title>Tele2</title>
+  </head>
+  <body>
+    
+      <!-- основной контейнер -->
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <!-- блок с меню -->
+          <aside class="col-lg-4 col-md-12 left-sidebar">
+            <!-- логотип -->
+            <div class="left-sidebar_logo text-center">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="34" viewBox="0 0 88 34">
+                  <g>
+                    <g transform="translate(-241 -151)">
+                      <image width="88" height="34" transform="translate(241 151)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAiCAYAAADbLB6TAAAHIklEQVRoQ+2ae/BtcxnGP0+uyYhBuVccTlMRDir6w5BTM3INnampxklRTExUCmOGFE2o6aIJuYxLCgkzMboZt5TjbnDcQighKc3I5THP9t2/WWeftfZa+5z9+x2H887sWfv3W9/1Xe9+1vt9v8/7vEsssU4I2J4OPAi8D/g4sDzwOHA78EdJf6ubSJ1mfx0Psj0b+CzwAeDNwMHAkQOQPAtcCHxL0l3Vc0sAbgge2x8Bvgckcvu2LPA54EdDYm5vSaf3z79uALa9NvA2IMcNgc2AayQFxHnM9gHAD2pATFrYB/hhy6KeJem8jHlNAWx7WlnGNwH7AtsA65bP22t+75mSPlMFy/ZeQA+chQA4l64t6dHFFmDbWwNZxonGgLheOT5Sjk8Cq7RE2omSvtwfY3sN4LEh13SN4ExxnqRZizPAvwJ2rQHjdkkb2/4LsMWIAP+8MISmy5YBvpLNrOO+v/IiAdh2HH0rsA6wEbBBicSLJP2ii/O2TwL2qxl7s6TNRgW4Q/TmVqsC2wPfLj63ubrbpAJsOyAGvOzE+Swj6WDbmwA31+TE0JzD2rzO+TEBfJKkL5b5Diysoen2idyMDyXL/T8GJBjeMMTfAxcYYNtLSXrR9lrA+gXIfwH3Aj8p0ZncuHTVAUmy/d4C8KBvh0g6fiEBvknS5rbDR6sUq27a4yUdUgC7CNil4d5HSjpq8Jzt7wNfGuLvQZ0Atp2lnEjMTvwO4ETgpVLF5Fz/KV5bctQ1DTe9T9I02xsDt9aMGQfAWRkzgKuAPPxUX/8A/g6k2srf2chShT0q6T8F4DuBd9b49BywoqQXagDes0RxE8afmgC48MRwxERjbpSnn+/5Xz5Vy277FPD/gf+fC3wXmLMIAZ5b/A8oPfDazPabAjawUs3YOyS9p24O221pZcss1xOAPImA2CmigdWAOJ+nW7U2gJ+QtLrtOHzbJEXwvZJC3Tqb7RQgf2244HpJ728AOKvkgw3XBZ+VA/AtQDadUawJ4DNL/k2qqLNeNJRNLvcdtHGkiHskhZl0NttZsUkRddajfYMnbCcN3TDkJhdI2iMAXwZ8uLM3rwwMO/hnycPVS38NHAp8p+S55LoQ/+S9h/Nd0jO2ExHXTRLACxLBydWhfUl7T5RPUkYvb0uaD3zbdxeK2QTdTElXBOCrS0nZNPC/JXU8UzaJbBSfBiJ8pFqqWo+Dtj2sUoXVbYTjiOC5kqbbXrOkvdVLSsuqC4/9paS61dPm9sR52z8D9h5ywQOSsn8RgC8BtgIeKADeUY7he/8uG1meYKLP/Ultv7uwiOp95khqq57CISP91aWRcQDcLzRuLILOIA6zJZ3WGc2BgbYPB45uub4XvX2Ao3E+26chtrcrm17SQDa+RMImkp6uTmo7eS7LpGq3SNq0zflJBrjPgxMo76rxZXdJKbNHNtv7d1DSrpA0sz/5fKzB9sXATgN3nybpvg4AJ91k8s0ryzI8ObLgbyvRPxUR3KRFLBDAtqMD/7TDU1lN0kTqrAP45KJ5VufaQNL9HQA+G0h18+cBR05Iiby4Amw7mkc2wTbbWVJS7oSNG+BzSpWX6KnaoZKOe5UAvIekC9qQqvialtGpHcYfIyn5eR4bN8BNhcZUAnyjpBm2Q7nq9OCJbkMbaEM6G4OXnivpE3XzTRXAh0s6ZooiOJtbCoMs6wAcJhSqmcoqVDNMJ6LUULP9NeDYtnHAHySFGNTauAE+o2wEgxx3HjVqkllET1DqAEzjENtHAPOpZzUXpDU1o0pfJztF/A7IUkllmGhJ5IRP3y8p6lXPJhngkUvlil9pCaXcjzbTZlHttpL0/LCB447gWyVF621bfpNJ0xYG4E8C3wDuAZJG/lcJkgRL/k7APD3IFqYqRdwgacuFAPjrkrrkvWEdjZFThO3o2ZEsU1xFO4nWHes3C3JMMOa4QnmrJwLRWyp/RzpYLl0b4I3lOHdRRXA6wnVaRLoD4eGpIONo3+Ec8+Oi1z4u6XrbPwa+UPMw+03PUKaA0J8nAOSHJw3ke+Y6Q9I3be8O5GWRANsfv1RboHQ4f9e4Af4N8HngqyUi8mPy6T/16MF7DmkZfaiMTTXZZFdK2tZ2Xv5I6TpobTStOv5USfvYzrsRE2/jdACu65DLxw1wnDwFSMlcZ89LWrZBKMr4dGyjjeQ9rybr6axDAB65q2x7FhAOP24bO8BtHY22ntwOZRkPi+DIjXstAbg+FpYAbPt8ID3/qk2XlGbihNmOFJiqqWqXl1c7/9Sw1iKLrmg7altdY/SjJQcPe/nk95K2t30WEFo1aI9JWst2uih5nWqYnSZpdnlFtYveMGoKmVOXgyMmDxLtHSSl5VMFOC38tJuqdikQtb8phz4UrbRoyXVpIMJKGMMw5eoySQeVaqsO4Dsl7VYCpbYbXHH49NBC2zsCnd7HGBHhq18G82+lgNFawmwAAAAASUVORK5CYII=" style="&#10;"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <!-- /.left-sidebar_logo логотип-->
+
+            <!-- меню -->
+            <div class="left-sidebar_menu">
+              <div class="left-sidebar_menu-btn"><i class="fas fa-bars"></i></div>
+              <ul class="left-sidebar_menu-links">
+                <li class="left-sidebar_menu-link"><a href="#">Первая ссылка</a></li>
+                <li class="left-sidebar_menu-link"><a href="#">Вторая ссылка (активная)</a></li>
+                <li class="left-sidebar_menu-link"><a href="#">Третья ссылка</a></li>
+                <li class="left-sidebar_menu-link"><a href="#">Личный кабинет</a></li>
+                <li class="left-sidebar_menu-link"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+            <!-- /.left-sidebar_menu меню-->
+          </aside>
+          <!-- /.left-sidebar блок меню-->
+
+          <!-- основной блок -->
+          <main class="col-lg-8 col-md-12 content">
+
+            <!-- заголовок -->
+            <header class="content_header">
+              <h1>Заголовок страницы</h1>
+              <p>В отличие от пылевого и ионного хвостов, направление поступает
+              в лимногляциальный часовой угол</p>
+            </header>
+            <!-- /.main-content_header заголовок-->
+            
+            <!-- основной контент -->
+            <div class="content_main">
+              <!-- информация по оплате -->
+              <div class="info-payment">
+                <p>Информация по оплате:</p>
+                <div class="block block-info"> 
+                  <p>Номер счета:</p> 
+                  <p>Сумма платежа:</p> 
+                </div>
+
+                <div class="block block-number">
+                  <p>87123658716587</p>
+                  <p>100 руб.</p>
+                </div>
+              </div>
+              <!-- /.info-payment информация по оплате-->
+              
+              <!-- блок с реквизитами банковской карты -->
+              <div class="bank-card">
+                <h2>Данные банковской карты</h2>
+                <!-- форма ввода данных карты -->
+                <form action="#" class="bank-card_details" id="details" method="post">
+                  <!-- передняя сторона карты -->
+                  <div class="front-side card-side">
+
+                    <label for="card-number">Номер карты</label>               
+                      <input type="tel" name="card_number1" id="card_number" class="card-number only_digits" maxlength="4">
+                      <input type="tel" name="card_number2" id="card_number2" class="card-number only_digits" maxlength="4">
+                      <input type="tel" name="card_number3" id="card_number3" class="card-number only_digits" maxlength="4">
+                      <input type="tel" name="card_number4" id="card_number4" class="card-number only_digits" maxlength="4"> 
+
+                    <label>Срок действия</label>
+
+                    <!-- месяц -->
+                      <select title="Месяц">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+
+                      <!-- год -->
+                      <select title="Год">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                      </select>
+
+                      <div class="mobile-cvc text-right">
+                        <label for="code_cvc">Код CVV2 / CVC2</label>
+                        <input type="tel" name="cvc" class="cvc only_digits" id="cvc" required maxlength="3" title="Трёхзначный код на обратной стороне карты">
+                      </div>
+
+                    <input type="text" name="card_owner" class="card_owner" id="card_owner" placeholder="Держатель карты" title="Введите имя и фамилию латинскими буквами">
+
+                  </div>
+                  <!-- /.front-side передняя сторона карты-->
+
+                  <!-- задняя сторона карты -->
+                  <div class="back-side card-side text-right">
+                    <div class="block-line"></div>
+                    <label for="code_cvc">Код CVV2 / CVC2</label>
+                    <input type="tel" name="cvc" class="cvc only_digits" id="cvc" maxlength="3" title="Трёхзначный код на обратной стороне карты">
+                  </div>
+                  <!-- /.back-side задняя сторона карты-->
+
+                  <!-- кнопка отправить -->
+                  <button type="submit" class="btn_submit">Оплатить</button>
+                </form>
+                <!-- /.bank-card_details форма ввода данных карты-->
+
+              </div>
+              <!-- /.bank-card блок с реквизитами банковской карты-->
+            </div>
+            <!-- /.content-main основной контент-->
+
+            <!-- подвал -->
+            <footer class="content_footer">
+              <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+              <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+              <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+              <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+              
+            </footer>
+            <!-- /.content_footer -->
+
+          </main>
+          <!-- /.col-8 main-content-->
+        </div>
+      </div>
+      <!-- /.container -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

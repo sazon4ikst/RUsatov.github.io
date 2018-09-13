@@ -1,0 +1,410 @@
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Arial MT';
+  src: url("../fonts/arial MT.ttf") format("truetype");
+  font-weight: 400; }
+
+body {
+  background-color: #101114;
+  font-family: "Arial MT", sans-serif;
+  font-size: 12px;
+  padding-top: 85px;
+  padding-bottom: 85px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 22px;
+  color: #383d43;
+  font-family: "Open Sans Bold", sans-serif; }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 18px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  a:hover {
+    color: #808592;
+    text-decoration: none; }
+
+p {
+  color: #383d43; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+.left-sidebar {
+  background-color: #1f2229;
+  padding: 0;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+  .left-sidebar_logo a {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    padding: 65px 115px; }
+  .left-sidebar_menu-btn {
+    display: none; }
+  .left-sidebar_menu-links {
+    display: block; }
+  .left-sidebar_menu-link:nth-child(n+4) {
+    background-color: #191c24; }
+    .left-sidebar_menu-link:nth-child(n+4) a {
+      color: #808592; }
+  .left-sidebar_menu-link:hover {
+    background-color: #2a2d37; }
+  .left-sidebar_menu-link a {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0 30px 30px; }
+    .left-sidebar_menu-link a:focus {
+      color: #808592;
+      background-color: #2a2d37; }
+    .left-sidebar_menu-link a:active {
+      color: #00aeef; }
+
+.content {
+  padding: 0; }
+  .content_header {
+    max-width: 100%;
+    padding: 52px 27px 33px;
+    background-color: #00aeef; }
+    .content_header h1 {
+      font-size: 35px;
+      line-height: 35px; }
+    .content_header p {
+      display: inline-block;
+      width: 70%;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 15px;
+      margin-bottom: 0; }
+  .content_main {
+    background-color: #f7f8f8;
+    padding: 47px 29px 51px; }
+    .content_main .info-payment p {
+      color: #8494ab;
+      font-size: 16px; }
+    .content_main .info-payment .block {
+      display: inline-block; }
+    .content_main .info-payment .block-number {
+      padding-left: 41px; }
+      .content_main .info-payment .block-number p {
+        color: #383d43; }
+    .content_main .bank-card {
+      max-width: 100%;
+      padding-top: 15px; }
+      .content_main .bank-card_details {
+        width: 100%;
+        position: relative; }
+        .content_main .bank-card_details input {
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+          .content_main .bank-card_details input:hover {
+            -webkit-box-shadow: 0 0 22px 1px #e4e9ee;
+                    box-shadow: 0 0 22px 1px #e4e9ee; }
+          .content_main .bank-card_details input:focus {
+            -webkit-box-shadow: 0 0 22px 1px #e4e9ee;
+                    box-shadow: 0 0 22px 1px #e4e9ee; }
+        .content_main .bank-card_details .card-side {
+          width: 350px;
+          height: 236px;
+          padding: 20px 16px 15px;
+          border: 1px solid #e4e9ee;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          background-color: #f7f8f8; }
+        .content_main .bank-card_details span.error {
+          display: none !important; }
+        .content_main .bank-card_details .front-side {
+          position: relative;
+          z-index: 1; }
+          .content_main .bank-card_details .front-side label {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: 16px;
+            line-height: 21px;
+            color: #8494ab; }
+          .content_main .bank-card_details .front-side label:nth-of-type(2) {
+            margin-top: 12px;
+            margin-bottom: 5px; }
+          .content_main .bank-card_details .front-side input, .content_main .bank-card_details .front-side select {
+            height: 42px;
+            padding: 12px;
+            font-size: 16px;
+            outline: none; }
+          .content_main .bank-card_details .front-side .card-number {
+            width: 20%;
+            margin-right: 9px;
+            border: 1px solid #e4e9ee;
+            padding: 5px;
+            -moz-appearance: textfield; }
+          .content_main .bank-card_details .front-side select {
+            border: 1px solid #e4e9ee;
+            padding: 10px; }
+          .content_main .bank-card_details .front-side .mobile-cvc {
+            display: none; }
+          .content_main .bank-card_details .front-side .card_owner {
+            display: block;
+            width: 100%;
+            border: 1px solid #e4e9ee;
+            margin-top: 12px;
+            line-height: 16px; }
+        .content_main .bank-card_details .back-side {
+          position: absolute;
+          top: 20px;
+          left: 194px;
+          z-index: 0;
+          padding: 0; }
+          .content_main .bank-card_details .back-side .block-line {
+            width: 100%;
+            height: 42px;
+            margin-top: 26px;
+            background-color: #e4e9ee; }
+          .content_main .bank-card_details .back-side label {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            font-size: 16px;
+            line-height: 21px;
+            color: #8494ab;
+            margin-top: 19px;
+            margin-right: 24px; }
+          .content_main .bank-card_details .back-side input[type="tel"] {
+            height: 42px;
+            padding: 12px;
+            width: 138px;
+            font-size: 16px;
+            line-height: 16px;
+            margin-right: 15px;
+            border: 1px solid #e4e9ee;
+            background: url("../img/hint.png") no-repeat 95% 50%;
+            background-color: #ffffff;
+            outline: none; }
+        .content_main .bank-card_details ::-webkit-input-placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #bec6cf;
+          opacity: 1;
+          /* Firefox */ }
+        .content_main .bank-card_details ::-moz-placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #bec6cf;
+          opacity: 1;
+          /* Firefox */ }
+        .content_main .bank-card_details :-ms-input-placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #bec6cf;
+          opacity: 1;
+          /* Firefox */ }
+        .content_main .bank-card_details ::-ms-input-placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #bec6cf;
+          opacity: 1;
+          /* Firefox */ }
+        .content_main .bank-card_details ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #bec6cf;
+          opacity: 1;
+          /* Firefox */ }
+        .content_main .bank-card_details :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #bec6cf; }
+        .content_main .bank-card_details ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #bec6cf; }
+        .content_main .bank-card_details .btn_submit {
+          width: 173px;
+          height: 40px;
+          -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+                  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+          background-color: #95bf00;
+          background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(255, 255, 255, 0.2)));
+          background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+          background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+          border: none;
+          -webkit-border-radius: 3px;
+                  border-radius: 3px;
+          color: #ffffff;
+          font-family: "Open Sans Bold", sans-serif;
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 35px;
+          cursor: pointer;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+          .content_main .bank-card_details .btn_submit:hover {
+            -webkit-box-shadow: 0 0 22px 2px #E4FF84;
+                    box-shadow: 0 0 22px 2px #E4FF84; }
+
+.content_footer {
+  background-color: #373c43;
+  padding: 26px 45px 17px 29px; }
+  .content_footer p {
+    color: #89909d; }
+
+.error {
+  border: 1px solid red !important; }
+  .error:hover {
+    -webkit-box-shadow: 0 0 22px 1px #F5B1B4 !important;
+            box-shadow: 0 0 22px 1px #F5B1B4 !important; }
+  .error:focus {
+    -webkit-box-shadow: 0 0 22px 1px #F5B1B4 !important;
+            box-shadow: 0 0 22px 1px #F5B1B4 !important; }
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0; }
+  .left-sidebar_menu-btn {
+    display: inline-block;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 0 10px; }
+  .left-sidebar_menu-links {
+    display: none; }
+  .left-sidebar_menu-link a {
+    padding: 15px 0 15px 30px; } }
+
+@media screen and (max-width: 769px) {
+  a {
+    font-size: 14px; }
+  .left-sidebar_logo a {
+    padding: 35px 115px; }
+  .content_header h1 {
+    font-size: 30px; }
+  .content_header p {
+    width: 100%; }
+  .content_main .bank-card_details {
+    width: 100%;
+    max-width: 100%; }
+    .content_main .bank-card_details .card-side {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      padding: 0;
+      background-color: transparent; }
+    .content_main .bank-card_details .front-side .mobile-cvc {
+      display: inline-block;
+      position: absolute;
+      top: 71px;
+      right: 0; }
+      .content_main .bank-card_details .front-side .mobile-cvc label {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        line-height: 21px;
+        color: #8494ab;
+        margin-top: 12px;
+        margin-bottom: 5px; }
+      .content_main .bank-card_details .front-side .mobile-cvc input[type="tel"] {
+        height: 42px;
+        padding: 12px;
+        line-height: 12px;
+        width: 138px;
+        border: 1px solid #e4e9ee;
+        background-color: #ffffff;
+        outline: none; }
+    .content_main .bank-card_details .back-side {
+      display: none; }
+    .content_main .bank-card_details .btn_submit {
+      margin-top: 0; } }
+
+@media screen and (max-width: 481px) {
+  a {
+    font-size: 14px; }
+  .left-sidebar_logo a {
+    padding: 35px 115px; }
+  .content_header h1 {
+    font-size: 25px; }
+  .content_header p {
+    width: 100%; }
+  .content_main .info-payment p {
+    font-size: 14px; }
+  .content_main .bank-card h2 {
+    font-size: 18px; }
+  .content_main .bank-card_details {
+    width: 100%;
+    max-width: 100%; }
+    .content_main .bank-card_details .card-side {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      padding: 0;
+      background-color: transparent; }
+    .content_main .bank-card_details .front-side label {
+      font-size: 14px; }
+    .content_main .bank-card_details .front-side input, .content_main .bank-card_details .front-side select {
+      font-size: 14px; }
+    .content_main .bank-card_details .front-side .mobile-cvc input[type="tel"] {
+      width: 45%; }
+    .content_main .bank-card_details .btn_submit {
+      margin-top: 0; } }
+
+@media screen and (max-width: 321px) {
+  .left-sidebar_logo a {
+    padding: 20px 0px; }
+  .left-sidebar_menu-btn {
+    font-size: 22px; }
+  .left-sidebar_menu-link a {
+    font-size: 12px;
+    padding: 8px 0 8px 30px; }
+  .content_header {
+    padding-top: 20px; }
+    .content_header h1 {
+      font-size: 22px;
+      line-height: 22px; }
+    .content_header p {
+      font-size: 12px;
+      line-height: 12px;
+      width: 100%; }
+  .content_main {
+    padding-top: 20px; }
+    .content_main .info-payment p {
+      font-size: 10px; }
+    .content_main .bank-card {
+      padding-top: 0; }
+      .content_main .bank-card h2 {
+        font-size: 16px; }
+      .content_main .bank-card_details {
+        width: 100%;
+        max-width: 100%; }
+        .content_main .bank-card_details .card-side {
+          width: 100%;
+          max-width: 100%;
+          border: none;
+          padding: 0;
+          background-color: transparent; }
+          .content_main .bank-card_details .card-side label {
+            font-size: 12px; }
+        .content_main .bank-card_details .front-side .mobile-cvc input[type="tel"] {
+          width: 30%; }
+        .content_main .bank-card_details .front-side .card-number {
+          width: 21%;
+          margin-right: 4px; }
+        .content_main .bank-card_details .front-side #card_number4 {
+          margin-right: 0; } }
