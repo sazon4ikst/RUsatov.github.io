@@ -1,0 +1,563 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #f6f6f6;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	display: flex;
+}
+a{
+	text-decoration: none;
+}
+header{
+	padding: 22px 0;
+}
+.header-container{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.header-container a{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 32px;
+	letter-spacing: 0.1em;
+	color: #000000;
+	padding: 27px 6px;
+	margin-right: 63px;
+}
+.header-container a:hover{
+	background: #ffea00;
+}
+#menu-checkbox{ /*скрываем чекбокс*/
+	display: none;
+}
+ul{
+	display: flex;
+}
+nav{
+	margin-top: 20px;
+}
+main{
+	margin: 0 auto;
+}
+.top-slide{ /*фон картинка. пэддинги для того чтоб полностью было видно картинку*/
+	background: url(../img/background.png) no-repeat top center;
+	margin: 0 auto;
+	padding-top: 120px;
+	padding-bottom: 280px;
+}
+.top-container{
+	width: 85%;
+	margin: 0 auto;	
+}
+.top-slide h2{
+	background: #ffea00;
+	display: inline;
+	font-size: 70px;
+	color: #000000;
+	padding: 0 13px;
+}
+.top-container div:nth-of-type(2){
+	margin-bottom: 14px;
+}
+.top-slide p{
+	display: inline; /*чтобы параграф не растягивался на всю ширину страницы*/
+	font-size: 24px;
+	padding: 0 4px;
+	color: #ffffff;
+	background: #414146;
+}
+
+.specialize-container{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.specialize-container h3{
+	font-size: 35px;
+	/*margin-top: 76px;*/
+	font-weight: 400;
+	line-height: 35px;
+	color: #424147;
+}
+.specialize-container p{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #424147;
+	margin-top: 27px;
+	margin-bottom: 66px;
+}
+.bottom-card p{
+	font-size: 20px;
+	color: #ffffff;
+}
+.card{
+	margin: 0 auto;
+}
+.card:not(:first-child){ /*задаём фон и размер всем карточкам кроме первой*/
+	background: #ffea00;
+	padding-top: 40px;
+	width: 250px; 
+	height: 200px;
+}
+.card:last-child{
+	margin-right: 0;
+}
+.card:nth-child(3) img{
+	margin-bottom: 9px;
+}
+.card:nth-child(4) img{
+	margin-bottom: -13px;
+}
+.top-card p{
+	margin: 0px;
+	margin-top: 36px;
+	padding: 0;
+	padding-bottom: 3px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+.bottom-card{
+	background: #414146;
+	position: relative;
+	top:-35px;
+	cursor: pointer;
+}
+.bottom-card:hover:after{ /*при наведении появляется треугольник*/
+	content: '';
+    position: absolute;
+    background: #414146;
+    left: 200px; top: -8px; /* его расположение */
+    width: 15px; height: 15px; /* размер треугольника*/
+    transform: rotate(45deg); /* Поворачиваем на 45º */
+    -webkit-transform: rotate(45deg);    
+}
+.bottom-card p{
+	width: 250px; 
+	/*height: 85px;*/
+	text-align: center;
+	padding: 20px 0 20px;
+}
+.specialize-cards{
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.portfolio h4{
+	display: inline-block;
+	background: #424147;
+	padding: 0 8px;
+	color: #ffea00;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.portfolio p{
+	font-size: 16px;
+	color: #424146;
+}
+.toggles button{
+	border: none;
+	background-color: white;
+	color: #424146;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+	outline: none;
+	background-color: transparent;
+}
+.toggles button:after{
+	padding-left: 10px;
+	content: ' /'	
+}
+.toggles button:last-child:after{
+	content: ''
+	}
+.post img{
+	width: 250px;
+	height: 200px;	
+	padding: 0;
+	margin: 0;
+}
+.posts{
+	width: 90%;
+	height: 620px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto;
+}
+
+.image {	
+	cursor:pointer;
+	position: relative;
+	width: 250px;
+	height: 200px;	
+	padding: 0;
+	margin: 0;
+}
+
+.popup {
+	position: fixed;
+	height:100%;
+	width:100%;
+	top:50%;
+	left:0;
+	bottom: 0;
+	right: 0;
+	display:none;
+	text-align:center;
+	transform: translate(0, -50%);
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.8);
+	position:relative;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: fixed;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	margin:auto auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	/*padding: 50px;*/
+}
+
+.brand-slider{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.brand-slider h4{
+	margin-top: 40px;
+	display: inline-block;
+	background: #424147;
+	padding: 0 8px;
+	color: #ffea00;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.brand-slider p{
+	font-size: 16px;
+	color: #424146;
+	margin-bottom: 20px;
+}
+.slider{
+	margin: 40px 60px 120px;
+}
+
+.slick-prev,.slick-next{
+	padding: 16px 16px 12px;
+	font-size: 34px;
+	background-color: #000;
+	border-style: none;
+	cursor: pointer;
+	outline: none;
+}
+.slick-prev:hover,.slick-next:hover{
+	background-color: grey;
+}
+.slick-prev{
+	display: inline-block;
+	position: absolute;
+	left: -100px;
+	margin: 0;
+}
+.slick-next{
+	display: inline-block;
+	position: absolute;
+	right: -100px;
+	bottom: 5px;
+	margin: 0;
+}
+footer{
+	background-color: #414146;
+	color: #ffffff;
+}
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 30px;
+	display: grid;
+	grid-template-columns: 30% 35% 25%;
+	grid-column-gap: 3%; 
+}
+.about-us{
+	
+}
+.about-us h4{
+	padding-bottom: 25px;
+}
+.about-us p{
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 21px;
+}
+.about-us .btn{
+	font-family: 'Poppins', sans-serif;
+	background-color: #000;
+	color: #ffffff;
+	border: none;
+	border-bottom: 2px solid #eeda00;
+	padding: 10px 15px;
+	margin: 30px 0;
+	cursor: pointer;
+	outline: none;
+}
+.photostream img{
+	padding-right: 4px;
+}
+.tweets{
+	margin: 0 auto;
+}
+.tweets h4{
+	padding-bottom: 25px;
+}
+.tweets p{
+font-size: 13px;
+font-weight: 400;
+line-height: 21px;
+}
+.tweets cite{
+font-size: 8px;
+font-weight: 400;
+line-height: 21px;
+color: #ffea00;
+margin-left: 45px;
+padding-top: 35px;
+}
+
+.tweets p:before{
+	content: url(../img/Twitter.png);
+	margin-right: 20px;
+	position: relative;
+	top: 15px;
+}
+.tweets span{
+	color: #ffea00;
+}
+.social h4{
+	margin-top: 50px;
+	display: inline-block;
+}
+.icon-social{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top:10px;
+	left: 10px;
+	background: #000;
+}
+.icon-social:hover{
+	background-color: #29292c;
+}
+.contact-info{
+	margin: 0 auto;
+}
+.contacts h4{
+	margin-bottom: 60px;
+}
+.contacts p{
+	font-size: 13px;
+	font-weight: 400;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.phone span{
+	font-size: 13px;
+	font-weight: 400;
+	margin-left: 97px;
+}
+.contacts img{
+	position: absolute;
+}
+.email span{
+	color: #ffea00;
+}
+.follow{
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+.follow p{
+	font-size: 13px;
+	font-weight: 400;
+}
+.mail{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #ffea00;
+	color: #fff;
+	outline: none;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	font-weight: : bold;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 500ms;
+}
+.mail:hover{
+	background-color: #29292c;
+	
+}
+.follow img{
+	position: relative;
+	top: 10px;
+	
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px){
+	.header-container{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.main-menu{ /* скрываем меню */
+		display: none;		
+	}
+	.main-menu li{
+		width: 100%;
+		display: block; 
+		font-size: 12px;
+	}
+	.main-menu a{
+		display: block;
+		padding: 8px;
+	}
+	.toggle-button{ /*задаём лэйблу расположение*/
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 20px;
+	}
+	.toggle-button:after{ /* для лэйбла задаём надпись*/
+		content: attr(data-open); /*надпись MENU при не нажатом чекбоксе (см. разметку) */
+		display: block;
+	}
+	.toggle-button:hover{
+		background: #ffea00;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu{
+		display: block; /* когда щёлкаешь на лейбл отображается список меню*/
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+		content: attr(data-close);  /*когда щёлкаешь на лейбл, надпись MENU меняется на CLOSE */
+	}
+	.header-container a{
+		margin-right: -65px;
+	}
+	.main-menu{
+		position: relative;
+		top: 30px;
+		right: 115px;
+	}
+	.top-slide {
+    padding-top: 40px;
+    padding-bottom: 40px;
+	}
+	.top-slide h2 {
+    font-size: 32px;    
+	}
+	.top-slide p {
+    font-size: 16px;
+    }    
+    .specialize-container p {
+    font-size: 16px;
+    }
+    .specialize-cards{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	}
+	.card:not(:first-child){
+		padding: 0;
+		margin: 0 auto;
+	}
+	.bottom-card p{
+	margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 30px;
+	display: grid;
+	grid-template-columns: 90%;
+	grid-column-gap: 3%; 
+	text-align: center;
+	}
+	.contact-info, .tweets, .about-us{
+		padding-top: 50px;
+		margin: 0 auto;
+	}
+	.contact-info, .tweets{
+		padding-top: 50px;
+		margin: 0 auto;
+		border-top: 2px solid #ffea00;
+	}
+	.contacts img{
+		display: none;
+	}
+	.follow img{
+		width: 50px;
+		height: 50px;
+		top: 20px;
+		left: 10px;
+	}
+	.mail{
+	width: 70%;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #ffea00;
+	color: #fff;
+	outline: none;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	font-weight: : bold;
+	font-size: 45px;
+	cursor: pointer;
+	transition: 500ms;
+}
+.mail:hover{
+	background-color: #29292c;	
+}
+.tweets p:before{
+	content: url(../img/Twitter.png);
+	margin-right: 20px;
+	position: relative;
+	top: 15px;
+}
+}
