@@ -13,6 +13,6 @@
 
 [Пятый проект TELE2](https://rusatov.github.io/project6/ "Валидация форм") - выполнен с помощью препроцессора SCSS и Bootstrap 4. Сборщик Gulp. Основная задача была сделать валидацию форм. Есть адаптив. [Исходные файлы](https://github.com/RUsatov/RUsatov.github.io/tree/master/project6)
 
-[Сайт грузоперевозок](http://RUsatov.github.io/Trucking "Грузоперевозки") - выполнен с помощью SCSS и Bootstrap 4. Сборщик gulp. Реальный коммерческий проект. Выкладываю без кода. Требовалась только верстка без натяжки.
+[Сайт грузоперевозок](http://RUsatov.github.io/Trucking "Грузоперевозки") - выполнен с помощью SCSS и Bootstrap 4. Сборщик gulp. Требовалась только верстка без натяжки.
 
 Ссылка на мой [репозиторий](https://github.com/RUsatov/RUsatov.github.io).
