@@ -22,7 +22,6 @@ gulp.task('sass', function(){ // Создаем таск Sass
 gulp.task('scripts', function() {
   	return gulp.src([ // Берем все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
-	    'app/libs/swiper/dist/js/swiper.min.js' // Берем Swiper
 
 	    ])
 	    .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
