@@ -1,0 +1,193 @@
+@media screen and (max-width: 1200px){
+	.navbar{
+		.nav-menu{
+			margin-left: 277px;
+			.nav-item{
+				.nav-link{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.product{
+	 &__header{
+	 	font-size: 35px;
+	 }
+	 &__par{
+	 	max-width: 50%;
+	 }
+	 &__btn{
+	 	font-size: 18px;
+	 }
+	}
+}
+
+@media screen and (max-width: 992px){
+	.navbar{
+		.nav-menu{
+			margin-left: 200px;
+			.nav-item{
+				.nav-link{
+					font-size: 15px;
+				}
+			}
+			.nav-item:not(:last-child){
+			margin-right: 27px;
+		}
+		}
+	}
+.contactUs{
+	background: url(../img/main/contactUs-bg.png) 100% no-repeat;
+ background-size: cover;
+	&__text{
+		.contactUs__header{
+			font-size: 40px;
+		}
+		.contactUs__par{
+			font-size: 15px;
+		}
+	}
+	&__form{
+ 	.contactUs__input{
+		padding: 10px;
+		}
+		.contuctUs__area--size{
+			font-size: 14px;
+		}
+		.contactUs__btn{
+			padding: 8px 35px;
+			font-size: 15px;
+			margin-top: 15px;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+	::-webkit-input-placeholder {font-size: 14px; font-family: $f_main;}
+::-moz-placeholder          {font-size: 14px; font-family: $f_main;}/* Firefox 19+ */
+:-moz-placeholder           {font-size: 14px; font-family: $f_main;}/* Firefox 18- */
+:-ms-input-placeholder      {font-size: 14px; font-family: $f_main;}
+
+}
+
+@media screen and (max-width: 769px){
+	.product__block--bg1, .product__block--bg2{
+		background-position: 50%;
+		-webkit-background-size: content;
+		background-size: content;
+	}
+	
+.navbar{
+	justify-content: space-between;
+	.logo{
+		position: relative;
+		box-shadow: none;
+		left: 0;
+		&__image{
+			width: 100%;
+			min-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.btn__menu{
+ 	display: block;
+ 	background-color: transparent;
+ 	border: none;
+ 	.fa-bars{
+ 		font-size: 30px;
+ 	}
+ }
+ .nav-menu{
+ 	display: none;
+ 	position: absolute;
+ 	top: 50px;
+ 	right: -40px;
+ 	z-index: 10;
+ 	background-color: #fff;
+ 	padding: 20px;
+ 	border-bottom-left-radius: 20px;
+ 	.nav-item{
+ 		margin-right: 27px;
+ 		border-bottom: 1px solid $active;
+	 	.nav-link{
+	 		display: inline-block;
+	 		padding: 10px;
+	 		
+	 	}
+	 }
+ }
+}
+
+}
+
+@media screen and (max-width: 525px){
+	.navbar{
+		.nav-menu{
+	 	display: none;
+	 	position: absolute;
+	 	top: 70px;
+	 	margin: 0;	 	
+	 	z-index: 10;
+	 	background-color: #fff;
+	 	padding: 20px 10px;
+	 	width: 70vw;
+	 	.nav-item{
+	 		width: 100%;
+	 		.nav-link{
+		 		display: inline-block;
+		 		padding: 10px;
+	 		}
+	 	}
+	 }
+	}
+ .product{
+ 	padding-top: 60px;
+ 	padding-bottom: 60px;
+ 	&__header{
+ 		font-size: 25px;
+ 		padding: 10px 20px;
+ 	}
+ 	&__par{
+ 		max-width: 80%;
+ 		font-size: 15px;
+ 	}
+ 	&__btn{
+ 		font-size: 15px;
+ 	}
+ }
+
+ .contactUs{
+ 	&__wrapper{
+ 		justify-content: center;
+ 		-webkit-align-items: center;
+ 		        align-items: center;
+ 		-webkit-flex-direction: column;
+ 		    -ms-flex-direction: column;
+ 		        flex-direction: column;
+  padding-top: 40px;
+ 	}
+ 	&__text{
+ 		max-width: 90%;
+ 		width: 90%;
+ 		text-align: center;
+ 		.contactUs__header{
+ 			font-size: 35px;
+ 		}
+ 		.contactUs__par{
+ 			font-size: 15px;
+ 			padding: 5px;
+ 			background-color: rgba(255, 255, 255, .5);
+ 			margin-bottom: 20px;
+ 		}
+ 	}
+ 	&__form{
+ 		width: 90%;
+ 		.contactUs__btn{
+ 			display: block;
+ 			margin: 10px auto 20px;
+ 		}
+ 	}
+ }
+
+
+}

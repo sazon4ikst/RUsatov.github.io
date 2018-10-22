@@ -1,0 +1,216 @@
+@import '_color';
+@import '_font';
+
+body{
+	font-family: $f_main;
+	font-size: 19px;
+}
+
+.header{
+	width: 100%;                
+}
+.navbar{
+	position: relative;
+	width: 90%;
+	max-width: 100%;
+	height: 76px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	.logo{
+		position: absolute;
+		left: 5%;
+		box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+		z-index: 1000;
+		background-color: #fff;
+		.logo__image{
+			padding: 10px 20px;			
+		}
+ }
+ .btn__menu{
+ 	display: none;
+ 	background-color: transparent;
+ 	border: none;
+ 	color: $active;
+ 	.fa-bars{
+ 		font-size: 30px;
+ 	}
+ 	
+ }
+	.nav-menu{
+		display: flex;
+		list-style: none;
+		margin-left: 193px;
+		.nav-item{
+			-webkit-align-self: center;
+			        align-self: center;
+			.nav-link{
+				&:hover{
+					color: $active;
+				}
+			}
+		}
+		.nav-item:not(:last-child){
+			margin-right: 77px;
+		}
+	}
+}
+
+.product__block--bg1{
+	background: url(../img/header/slider_img1.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.product__block--bg2{
+	background: url(../img/header/slider_img2.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.product{
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+ -webkit-align-items: center;
+         align-items: center;
+ padding-top: 100px;
+ padding-bottom: 250px;
+ &__header{
+ 	font-family: $f_header;
+ 	color: #fff;
+		font-weight: 700;
+		font-size: 55px;
+		padding: 10px 40px;
+		background-color: rgba(0, 0, 0, .2);
+		text-transform: uppercase;
+ }
+ &__par{
+ 	max-width: 22%;
+ 	text-align: center;
+ 	margin-top: 25px;
+ 	margin-bottom: 40px;
+ }
+ &__btn{
+ 	background: rgba(255, 225, 66, 0.9);
+		box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+		border: none;
+		border-radius: 8px;
+		padding: 15px 45px;
+		font-family: $f_main;
+		font-size: 22px;
+		transition: all .2s;
+		&:hover{
+			transform: scale(1.1);
+			box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+		}
+		&:focus{
+			background-color: darken(rgba(255, 225, 66, 0.9), 10%);
+		}
+ }
+}
+
+.contactUs{
+	background: url(../img/main/contactUs-bg.png) 50% no-repeat;
+ background-size: cover;
+	&__wrapper{
+		display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+ justify-content: space-around;
+ width: 90%;
+ margin: 0 auto;
+ padding-top: 80px;
+	}
+.center{
+	display: block;
+	margin: 0 auto;
+}
+	&__text{
+		max-width: 40%;
+		width: 40%;
+		.contactUs__header{
+			font-family: $f_header;
+			font-weight: 700;
+			line-height: normal;
+			font-size: 70px;
+			color: $active;
+			margin-bottom: 30px;
+		}
+		.contactUs__par{
+			font-size: 30px;
+			line-height: normal;
+		}
+	}
+	&__form{
+		width: 40%;
+		.contactUs__input{
+			font-family: $f_main;
+			background: $contact_input-bgc;
+			box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.03);
+			border: 1px solid transparent;
+			padding: 20px;
+			resize: none;
+			transition: all .2s;
+			&:hover{
+				background-color: darken($contact_input-bgc, 10%);
+			}
+			&:focus{
+				box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.2); 
+			}
+		}
+		.contactUs__btn{
+			background-color: $active;
+			border: none;
+			font-size: 20px;
+			font-family: $f_main;
+			color: $btn_text;
+			padding: 15px 70px;
+			margin-top: 35px;
+			margin-bottom: 80px;
+			transition: all .2s;
+			&:hover{
+			transform: scale(1.1);
+			box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+			}
+			&:focus{
+			background-color: darken($active, 30%);
+			}
+		}
+	}
+}
+.contuctUs__area--size{
+	width: 100%;
+	margin-bottom: 18px !important; 
+ font-size: 18px;
+}
+
+.error{
+	border: 1px solid red !important;
+}
+
+
+::-webkit-input-placeholder {font-size: 19px; font-family: $f_main;}
+::-moz-placeholder          {font-size: 19px; font-family: $f_main;}/* Firefox 19+ */
+:-moz-placeholder           {font-size: 19px; font-family: $f_main;}/* Firefox 18- */
+:-ms-input-placeholder      {font-size: 19px; font-family: $f_main;}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.contactUs__form--popup{
+	width: 95%;
+	padding: 20px;
+	.contactUs__btn{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@import '_media';
