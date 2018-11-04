@@ -1,242 +1,204 @@
 @import '_color';
 @import '_font';
 
-html,
-body {
+html, body{
   margin: 0;
   padding: 0;
 }
 
-.promo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.promo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   min-height: 100vh;
-
   background: url(../img/bg.png);
 }
 
-.header-text {
+.header-text{
   font-family: $header-f;
   font-size: 36px;
   font-weight: 400;
-
   padding-top: 47px;
   padding-bottom: 23px;
-
-  color: #fff;
-  text-shadow: 0 1px 0 #000;
-  
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000000;
   user-select: none;
 }
 
-.features {
+.features{
   margin-bottom: 20px;
 }
 
-.features--border {
+.features--border{
   position: relative;
-
   width: 320px;
   height: 480px;
   margin: 0 auto;
-
   cursor: pointer;
-
   border-radius: 12px;
   background: linear-gradient(135deg, transparent 35px, $border 0);
 
-  &:hover {
+  &:hover{
     background: linear-gradient(135deg, transparent 35px, $hover 0);
-    .product__weight {
+    .product__weight{
       background-color: $hover;
     }
   }
 }
-.border-block {
+.border-block{
   position: absolute;
   top: 4px;
   right: 4px;
   bottom: 4px;
   left: 4px;
-
   width: 312px;
   height: 472px;
-
   border-radius: 10px;
   background: $bgc;
   background: linear-gradient(135deg, transparent 34px, $bgc 0);
 }
 
-.features__content {
+.features__content{
   font-family: $main-f;
-
   padding: 20px 50px;
   user-select: none;
-  .product__promo--text {
+  .product__promo--text{
     font-size: 16px;
     font-weight: 400;
-
     margin: 0;
-
     color: $color-futures-text;
   }
-  .product__header {
+  .product__header{
     font-size: 48px;
     font-weight: 700;
-
     margin: 0;
     padding: 0;
   }
-  .product__stuffing {
+  .product__stuffing{
     font-size: 24px;
     font-weight: 700;
   }
-  small {
+  small{
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-
     display: inline-block;
-
     color: $color-futures-text;
   }
-  span {
+  span{
     font-weight: 700;
   }
-  .product__image {
+  .product__image{
     position: absolute;
     z-index: 0;
     bottom: 0;
     left: 0;
-
     max-width: 100%;
   }
-  .product__weight {
-	  position: absolute;
-	  right: 5px;
-	  bottom: 5px;
-
-	  width: 81px;
-	  height: 81px;
-
-	  border-radius: 50%;
-	  background-color: $border;
-	  &--text {
-	    font-size: 21px;
-	    line-height: 1em;
-
-	    position: absolute;
-	    top: 50%;
-	    left: 0;
-
-	    display: inline-block;
-
-	    width: 100%;
-	    margin: 0;
-	    margin-top: -.625em;
-
-	    color: #fff;
-	    span {
+  .product__weight{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background-color: $border;
+    &--text{
+      font-size: 21px;
+      line-height: 1em;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+      margin-top: -0.625em;
+      color: #ffffff;
+      span{
         font-size: 42px;
         font-weight: 400;
-
         display: inline-block;
-
         width: 100%;
-
         text-align: center;
-	    }
-	  }
-	}
+      }
+    }
+  }
 }
 
-.features__ad {
+.features__ad{
   font-family: $main-f;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-
   width: 100%;
   margin-top: 15px;
-
   text-align: center;
   white-space: nowrap;
-
-  color: #fff;
-  text-shadow: 0 1px 0 #000;
-  
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000000;
   user-select: none;
-  .features__link {
+  .features__link{
     text-decoration: none;
-
     color: $border;
     border-bottom: 1px dashed $border;
   }
 }
 
 
-.active {
+.active{
   position: relative;
-
   width: 320px;
   height: 480px;
   margin: 0 auto;
-
   cursor: pointer;
-
   border-radius: 12px;
   background: linear-gradient(135deg, transparent 35px, $border-select 0);
-  &:hover {
+  &:hover{
     background: linear-gradient(135deg, transparent 35px, $border-select-hover 0);
-    .product__weight {
+    .product__weight{
       background-color: $border-select-hover;
     }
   }
-  .product__weight {
+  .product__weight{
     background-color: $border-select;
   }
 }
 
-.disabled {
+.disabled{
   background: linear-gradient(135deg, transparent 35px, grey 0);
-  .product__weight {
-      background-color: grey;
+  .product__weight{
+    background-color: grey;
   }
-  &:hover {
+  &:hover{
     background: linear-gradient(135deg, transparent 35px, grey 0);
-    .product__weight {
+    .product__weight{
       background-color: grey;
-      &:hover {
+      &:hover{
         background-color: grey;
       }
     }
   }
-  &::before {
+  &::before{
     position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     content: '';
-
-    opacity: .7;
+    opacity: 0.7;
     border-radius: 10px;
     background-color: white;
     background: linear-gradient(135deg, transparent 34px, white 0);
   }
 }
-.disabled--text {
+.disabled--text{
   display: none;
-
   color: $disabled-text;
 }
 
-.active--text {
+.active--text{
   display: none;
 }
 
