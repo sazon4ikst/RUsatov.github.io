@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'a_AntiqueTradyBrk';
+    src: url('a_AntiqueTradyBrk.eot');
+    src: url('a_AntiqueTradyBrk.eot?#iefix') format('embedded-opentype'),
+        url('a_AntiqueTradyBrk.woff2') format('woff2'),
+        url('a_AntiqueTradyBrk.woff') format('woff'),
+        url('a_AntiqueTradyBrk.ttf') format('truetype'),
+        url('a_AntiqueTradyBrk.svg#a_AntiqueTradyBrk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AGFriquer';
+    src: url('AGFriquer-Bold.eot');
+    src: url('AGFriquer-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AGFriquer-Bold.woff2') format('woff2'),
+        url('AGFriquer-Bold.woff') format('woff'),
+        url('AGFriquer-Bold.ttf') format('truetype'),
+        url('AGFriquer-Bold.svg#AGFriquer-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

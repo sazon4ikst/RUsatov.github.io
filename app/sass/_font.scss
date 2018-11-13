@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'AGFriquer';
+  src: url('../fonts/AGFriquer-Bold.eot');
+  src: url('../fonts/AGFriquer-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AGFriquer-Bold.woff2') format('woff2'),
+      url('../fonts/AGFriquer-Bold.woff') format('woff'),
+      url('../fonts/AGFriquer-Bold.ttf') format('truetype'),
+      url('../fonts/AGFriquer-Bold.svg#AGFriquer-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodoni Bold';
+  src: url('../fonts/Bodoni Bold Cyrilic.eot');
+  src:url('../fonts/Bodoni Bold Cyrilic.woff2') format('woff2'),
+      url('../fonts/Bodoni Bold Cyrilic.woff') format('woff'),
+      url('../fonts/Bodoni Bold Cyrilic.svg#Exo2.0-Thin') format('svg'),
+      url('../fonts/Bodoni Bold Cyrilic.eot.ttf') format('truetype');
+      
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodoni';
+  src: url('../fonts/Bodoni regular.eot');
+  src:url('../fonts/Bodoni regular.woff2') format('woff2'),
+      url('../fonts/Bodoni regular.woff') format('woff'),
+      url('../fonts/Bodoni regular.svg#Exo2.0-Thin') format('svg'),
+      url('../fonts/Bodoni regular.eot.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Cezanne';
+  src: url('../fonts/Cezanne.ttf') format('truetype');
+}
+
+$header: 'Bodoni Bold', serif;
+$main: 'Noto Serif', serif;
+$portfolio: 'Cezanne', serif;
