@@ -2,7 +2,6 @@
 ### Портфолио
 
 Ссылка на мой [репозиторий](https://github.com/RUsatov/RUsatov.github.io).
-
 Ссылка на мой [сайт](https://rusatov.ru).
 
 1. [Монетный двор](http://kvashnin-art.com/serebryanaya-suvenirnaya-moneta/ "Волго-вятский монетный двор") - сайт монетного двора. Лендинг.
