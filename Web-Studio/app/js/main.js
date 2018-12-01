@@ -33,4 +33,11 @@ $(function(){
     $('body,html').animate({scrollTop: top}, 500);
   });
 
+  //ссылки
+  $('.nav-item').on('click', '.nav-link', function(){
+    $('.nav-link').removeClass('active-link');
+    $(this).toggleClass('active-link');
+  });
+  
+
 });

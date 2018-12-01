@@ -14,8 +14,34 @@ body{
 .navbar-light .navbar-nav .active>.nav-link{
   color: $main !important;
 }
+.nav-item{
+  padding: 0px 8px;
+}
 .nav-link{
   color: $menu-text !important;
+  position: relative;
+  padding: 8px 0 !important;
+  transition: .3s;
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transition: .3s;
+    transform: scale(0);
+  }
+  &:hover{
+    color: black !important;
+    &:after{
+      transform: scale(1);
+    }
+  }
+}
+.active-link{
+  color: #000 !important;
 }
 
 .navbar-toggler{
@@ -59,8 +85,9 @@ body{
 		&:before{
 			content: url(../img/angle-down-solid.svg);
 			display: block;
-			// position: absolute;
-			top: 0;
+      position: absolute;
+      right: 15px;
+			top: 15px;
 			z-index: 1000;
 			width: 20px;
 			height: 20px;
@@ -117,7 +144,7 @@ body{
 }
 
 .c-1-color{
-  background: linear-gradient(to bottom right, #d7b3f4,#8a87c6);
+  background: linear-gradient(to right, #d7b3f4,#8a87c6);
 }
 
 .range__block{
