@@ -30,8 +30,8 @@ body {
 
 .title {
   background: url(../img/background.png) no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 768px;
+          background-size: 768px;
   color: #000000;
   font-family: "Roboto-thin", sans-serif;
   font-size: 70px;
