@@ -1,0 +1,255 @@
+@import 'color';
+@import 'font';
+
+body {
+  font-family: $medium;
+  font-size: 18px;
+  line-height: 1.8;  
+  letter-spacing: -0.45px;
+}
+
+.wrapper{
+  max-width: 1400px;
+  min-width: 300px;
+  padding: 0;
+  overflow: hidden;
+}
+
+header{
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url(../img/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  // &:before{
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: rgba(0,0,0,.35);
+  // }
+}
+.navbar-brand{
+  color: $logo;
+  font-family: $Cubano;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.nav-link{
+  color: $link;
+  font-family: $medium;
+  line-height: 41px;
+  transition: 0.3s;
+}
+.headers{
+  color: $main-color-font;
+  font-size: 60px;
+  line-height: 75px;
+  font-family: $light;
+  letter-spacing: -1.5px;
+  span{
+    font-family: $bold;
+    letter-spacing: -1.5px;
+  }
+}
+.button{
+  border: 2px solid $button;
+  border-radius: 3px;
+  background-color: transparent;
+  outline: none !important;
+  color: $button;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover{
+    border: 2px solid $active;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $active;
+  }
+}
+
+.promo--position{
+  padding-top: 150px;
+  padding-bottom: 125px;
+}
+.promo__headers--h3{
+  font-family: $regular;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+  margin-bottom: 40px;
+  color: $second-color-font;
+}
+.promo__headers--h2{
+  font-family: $bold;
+  font-size: 66px;
+  text-transform: uppercase;
+  letter-spacing: -1.65px;
+  margin-bottom: 70px;
+  color: $second-color-font;
+}
+
+.promo__button--size{
+  width: 240px;
+  height: 65px;
+}
+
+// Web Development
+
+.webDev{
+  position: relative;
+  background: url(../img/bg-webDev.png) 90% 50% no-repeat;
+}
+.webDev--position{
+  width: 100%;
+  padding: 100px 40px;
+}
+.webDev__headers--margin{
+  margin-bottom: 35px;
+}
+.webDev__text{
+  width: 556px;
+  color: $text-font;
+  font-family: $regular;
+  line-height: 24px;
+}
+
+// Branding
+.branding--bg{
+  background-color: $bg-branding;
+  background-image: url(../img/bg-branding.png);
+  background-position:  15% 50%;
+  background-repeat: no-repeat;
+}
+.branding{
+  position: relative;
+}
+.branding--position{
+  width: 100%;
+  padding: 100px 40px;
+  padding-left: 375px;
+}
+.branding__headers--margin{
+  margin-bottom: 35px;
+}
+.branding__text{
+  width: 517px;
+  color: $text-font;
+  font-family: $regular;
+  line-height: 24px;
+}
+
+.features--position{
+  padding: 100px 0;
+}
+.feature{
+  position: relative;
+}
+.feature__img{
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: $main-color-font;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.feature--padding{
+  padding: 10px 95px;
+}
+.feature__header{
+  color: $main-color-font;
+  font-family: $medium;
+  font-size: 22px;
+  letter-spacing: -0.55px;
+}
+.feature__text{
+  color: $text-font;
+  font-family: $regular;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.contacts{
+  padding: 100px 0;
+}
+.contacts--bg{
+  background-color: $bg-hello;
+}
+.social__header--color{
+  color: $second-color-font;
+}
+.social__text{
+  width: 419px;
+  color: $second-color-font;
+  font-family: $regular;
+}
+.links{
+  padding-left: 15px;
+}
+.links__container{
+  position: relative;
+  margin-bottom: 25px;
+  padding: 0;
+  i{
+    width: 27px !important;
+    color: #fff !important;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+}
+
+.social-link{
+  color: $second-color-font;
+  font-family: $light;
+  padding-left: 10px;
+  text-decoration: none !important;
+  transition: 0.3s;
+  &:hover{
+    color: #000;
+  }
+}
+
+.feedback{
+  input, textarea{
+    border: 1px solid #cccccc;
+    padding-left: 20px;
+    color: #bbbbbb;
+    font-family: $medium;
+    letter-spacing: -0.45px;
+  }
+  input{
+    height: 50px;
+  }
+  textarea{
+    padding-top: 15px;
+    resize: none;
+  }
+}
+
+footer{
+  background: $bg-footer;
+}
+.footer__inner{
+  border-top: 1px solid #87a0d2;;
+}
+.footer__text{
+  font-family: $medium;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+.footer__text{
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+
+@import 'media';

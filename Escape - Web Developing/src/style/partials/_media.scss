@@ -1,0 +1,87 @@
+@media (max-width: 992px){
+  .branding--position{
+    padding-left: 40px;
+  }
+  .branding--bg{
+    background-position:  90% 50%;
+  }
+  .feature--padding{
+    padding: 10px 25px 10px 95px;
+  }
+  .social__text{
+    width: auto;
+  }
+  .social-link{
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px){
+  .navbar-collapse {
+    
+    background-color: rgba(52, 58, 64, .9);
+    
+  }
+  .navbar-nav{
+    text-align: center;
+  }
+  .navbar-toggler{
+    outline: none !important;
+  }
+  .promo--position{
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .promo__headers--h3{
+    font-size: 22px;
+    line-height: 2.2;
+    margin-bottom: 10px;
+  }
+  .promo__headers--h2{
+    font-size: 46px;
+  }
+  .webDev__text, .branding__text{
+    width: auto;
+  }
+  
+}
+
+@media (max-width: 576px){
+  .headers{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .promo__headers--h3{
+    font-size: 22px;
+    line-height: 2.2;
+    margin-bottom: 10px;
+  }
+  .promo__headers--h2{
+    font-size: 36px;
+  }
+  .branding--bg{
+    background-position:  50%;
+  }
+  .webDev{
+    background: url(../img/bg-webDev.png) 50% no-repeat;
+  }
+  .webDev--position, 
+  .branding--position{
+    padding: 30px 40px;
+  }
+  .features--position,
+  .contacts{
+    padding: 30px 0px;
+  }
+  .feature--padding{
+    padding: 10px 25px 10px 125px;
+  }
+  .feature__img{
+    left: 40px;
+    top: 10px;
+  }
+  .social-link{
+    // padding-left: 50px;
+  }
+  
+}

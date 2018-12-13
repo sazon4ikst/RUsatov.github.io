@@ -1,0 +1,391 @@
+// ================ Fonts ===================
+$main-font: 'Roboto', sans-serif;
+
+// ================ Colors ==================
+
+$active: #d50a51;
+$font-color: #ffffff;
+$font-color-second: #000000;
+$bg-promo: rgb(17, 158, 217);
+$border-sponsor: #119dd9;
+$bg-form: #000000;
+$bg-down-app: #000000;
+$bg-social: #000000;
+$font-input: #000000;
+$bg-input: #d7d7d7;
+$bg-btn-disabled: #737373;
+$bg-footer: #56595a;
+$font-footer: #d9d9d9;
+
+// =============== Main CSS =================
+
+body{
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $font-color;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.button{
+  display: inline-block;
+  height: 44px;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: $font-color;
+  background: $active;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.promo__block{
+  background: url(../img/1980-Fullscreen.jpg) 50% no-repeat;
+  background-size: cover;
+  flex: auto;
+  padding: 40px 80px 227px;
+}
+.logo-fc{
+  position: relative;
+  width: 320px;
+  img{
+    position: absolute;
+    left: 0;
+  }
+  p{
+    padding-left: 54px;
+    text-shadow: 0 1px 3px #000000;
+    font-family: $main-font;
+    font-size: 19px;
+    letter-spacing: 0.47px;
+    margin-bottom: 0;
+  }
+}
+
+.info__wrap{
+  padding: 21px 37px 30px;
+  width: 680px;
+  margin-top: 120px;
+  background-color: rgba(17, 158, 217, 0.8);
+}
+.info__header{
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 44px;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: -37px;
+    bottom: -25px;
+    background-color: $font-color;
+  }
+}
+
+.info__text{
+  padding-top: 49px;
+  font-size: 15px;
+}
+
+.info__second-header{
+  font-size: 22px;
+  font-weight: 300;
+}
+.promo__list{
+  padding-left: 35px;
+  margin-bottom: 0;
+}
+.list__item{
+  list-style-type: none;
+  font-weight: 400;
+  position: relative;
+  &:before{
+    content: url(../img/check-circle-solid.svg);
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    left: -24px;
+  }
+}
+
+.form__block{
+  display: flex;
+  flex: 0 0 20%;
+  // flex-basis: 400px;
+  padding: 40px 45px;
+  flex-direction: column;
+  background: url(../img/bg-form.png) 100% no-repeat, $bg-form;
+  background-size: contain;
+}
+
+.logo-form{
+  margin-bottom: 40px;
+}
+
+.form__header{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.signUp{
+  margin-top: 65px;
+  margin-bottom: 31px;
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.form__account{
+  p{
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
+.field-data{
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: $bg-input;
+  outline: none;
+  transition: 0.3s;
+  &:hover{
+    background: darken($bg-input, 10%);
+  }
+}
+
+
+.btn__open{
+  width: 100%;
+  &:hover{
+    background: darken($active, 10%);
+  }
+}
+
+input[type=checkbox]{
+  display: none;
+}
+input[type=checkbox]+label::before{
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: $bg-input;
+  cursor: pointer;
+}
+input[type=checkbox]:checked+label::before{
+  content: url(../img/check-solid.svg);
+}
+label{
+  text-align: left;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 36px;
+}
+.policy{
+  display: inline-block;
+  font-size: 14px;  
+  text-decoration: underline;
+  transition: 0.3s;
+  &:last-of-type{
+    margin-bottom: 55px;
+  }
+}
+
+::-webkit-input-placeholder{
+  /* Chrome/Opera/Safari */
+  text-align: center;
+  color: $font-input !important;
+}
+::-moz-placeholder{
+  /* Firefox 19+ */
+  text-align: center;
+  color: $font-input !important;
+}
+:-ms-input-placeholder{
+  /* IE 10+ */
+  text-align: center;
+  color: $font-input !important;
+}
+:-moz-placeholder{
+  /* Firefox 18- */
+  text-align: center;
+  color: $font-input !important;
+}
+
+// Section download__app
+
+.download__app{
+  position: relative;
+  background: $bg-down-app;
+  padding-top: 63px;
+  margin-top: 100px;
+}
+
+.app__block{
+  position: relative;
+  padding-left: 127px;
+  padding-bottom: 40px;
+}
+.phoneInArm{
+  position: absolute;
+  bottom: 0;
+  right: -320px;
+}
+.app__logo{
+  position: absolute;
+  left: 0;
+}
+.app__header{
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+.app__text{
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 28px;
+}
+.button__block{
+  margin-top: 35px;
+  margin-right: 80px;
+}
+
+.awards{
+  padding-top: 65px;
+  padding-bottom: 55px;
+  font-size: 14px;
+  background: $active;
+}
+
+.awards__header{
+  font-size: 32px;
+  font-weight: 300;
+  span{
+    font-weight: 400;
+  }
+}
+
+.block__awards{
+  display: flex;
+  justify-content: center;
+}
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn__live{
+  background: transparent;
+  border: 2px solid $font-color;
+  &:hover{
+    background: $font-color;
+    color: $active;
+  }
+}
+.btn__disable{
+  background-color: $bg-btn-disabled;
+  &:hover{
+    background: darken($bg-btn-disabled, 10%);
+  }
+}
+.buttons__awards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .button{
+    width: 288px;
+    outline: none;
+  }
+}
+
+.sponsor{
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 10px;
+  color: $font-color-second;
+  border-bottom: 5px solid $border-sponsor;
+  font-size: 17px;
+  font-weight: 400;
+  p{
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+.team{
+  position: absolute;
+  bottom: -5px;
+  margin-left: 65px;
+}
+
+.social-wrap{
+  background-color: $bg-social;
+  padding-top: 32px;
+}
+.warning{
+  position: relative;
+  padding-left: 37px;
+  img{
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+  p{
+    font-size: 12px;
+    line-height: 16px;
+    span{
+      font-weight: 400;
+    }
+  }
+}
+
+.social{
+  font-size: 22px;
+  line-height: 16px;
+}
+.social-link:not(:last-child){
+  margin-right: 12px;
+}
+
+footer{
+  background-color: $bg-footer;
+  padding-top: 63px;
+  padding-bottom: 90px;
+  img{
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  p{
+    color: $font-footer;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+@import 'media';

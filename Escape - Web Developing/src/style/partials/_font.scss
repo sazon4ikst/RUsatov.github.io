@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  src: url('../fonts/BrandonGrotesque-Light.eot');
+  src: url('../fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BrandonGrotesque-Light.woff') format('woff'),
+  url('../fonts/BrandonGrotesque-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Brandon Grotesque Regular';
+  src: url('../fonts/BrandonGrotesque-Regular.eot');
+  src: url('../fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BrandonGrotesque-Regular.woff') format('woff'),
+  url('../fonts/BrandonGrotesque-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Medium';
+  src: url('../fonts/BrandonGrotesque-Medium.eot');
+  src: url('../fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BrandonGrotesque-Medium.woff') format('woff'),
+  url('../fonts/BrandonGrotesque-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  src: url('../fonts/BrandonGrotesque-Bold.eot');
+  src: url('../fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BrandonGrotesque-Bold.woff') format('woff'),
+  url('../fonts/BrandonGrotesque-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cubano';
+  src: url('../fonts/cubano-regular-webfont.eot');
+  src: url('../fonts/cubano-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cubano-regular-webfont.woff') format('woff'),
+  url('../fonts/cubano-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$light: 'Brandon Grotesque Light', sans-serif;
+$regular: 'Brandon Grotesque Regular', sans-serif;
+$medium: 'Brandon Grotesque Medium', sans-serif;
+$bold: 'Brandon Grotesque Bold', sans-serif;
+$Cubano: 'Cubano', sans-serif;
