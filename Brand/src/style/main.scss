@@ -1,0 +1,42 @@
+/*
+* Подключаемые библиотеки
+*/
+
+// Bootstrap
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+// Swiper
+@import "../../bower_components/swiper/dist/css/swiper.min.css";
+// Normalize
+@import "partials/custom-reset.css";
+
+/*
+* Custom
+*/
+// Цвета
+@import 'partials/color';
+// Шрифты
+@import 'partials/fonts';
+// Настройки
+@import "partials/system";
+
+// Хедер
+@import "partials/header";
+  // Нижнее меню в хедере
+  @import "partials/bottom-menu";
+// Промо экран
+@import "partials/promo";
+// Категории
+@import "partials/category";
+// Продукты
+@import "partials/product";
+// Фишки
+@import "partials/features";
+// Подписка
+@import "partials/subscribe";
+  // slider
+  @import "partials/slider";
+// Подвал
+@import "partials/footer";
+
+// Адаптив
+@import "partials/responsive";

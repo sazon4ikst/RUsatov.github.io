@@ -1,0 +1,49 @@
+.feature{
+  margin-bottom: 100px;
+}
+.discount{
+  background-image: url(../img/bg-product.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.discount-header{
+  padding: 146px 39px 306px;
+  p{
+    font-size: 54px;
+  }
+  font-size: 32px;
+  border-left: none;
+  color: $font-color-second;
+}
+
+.feature-block{
+  padding-top: 48px;
+  margin-left: -1px;
+  background-color: $bg-feature;
+}
+
+.feature-item{
+  position: relative;
+  color: $font-color-second;
+  padding-bottom: 54px;
+  img{
+    position: absolute;
+  }
+  h5, p{
+    padding-left: 78px;
+  }
+  h5{
+    padding-bottom: 17px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+  }
+}

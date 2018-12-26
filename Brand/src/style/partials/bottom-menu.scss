@@ -1,0 +1,32 @@
+// Нижнее меню
+
+.bottom-menu{
+  border-top: 1px solid #ececec;
+}
+.nav-item:not(:last-child){
+  margin-right: 25px;
+}
+.nav-link{
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: $active;
+    transition: 0.2s;
+  }
+  &:hover{
+    color: $active !important;
+    &:after{
+      left: 0;
+      width: 100%;
+    }
+  }
+}
