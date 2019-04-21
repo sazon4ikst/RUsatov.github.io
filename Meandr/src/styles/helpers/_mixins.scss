@@ -1,0 +1,14 @@
+@mixin column($width) {
+  position: relative;
+  width: 100%;
+  // padding-right: 0.9375rem;
+  // padding-left: 0.9375rem;
+  flex: 0 0 $width;
+  max-width: $width;
+}
+
+@mixin font($fz, $lh, $ls) {
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

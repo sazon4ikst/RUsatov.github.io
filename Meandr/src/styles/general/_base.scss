@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+
+	transition: 0.3s;
+}
+
+html {
+	font-size: 16px;
+	@media (max-width: 992px){
+		font-size: 14px;
+	}
+	@media (max-width: 768px){
+		font-size: 12px;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+
+	font-family: $font-main;
+	color: $text-main;
+
+	text-decoration-skip: objects;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+section {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: $text-main !important;
+}
+// Нelpers
+.d-flex {
+	display: flex;
+}
+.container {
+	max-width: 75rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 0.9375rem;
+	padding-left: 0.9375rem;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.align-items-center{
+	align-items: center;
+}
+.w-100{
+	width: 100%;
+}
+
+.img-responsive {
+	width: 100%;
+	max-width: 31.25rem;
+	height: auto;
+}
+// Fonts
+.main--font {
+	font-family: $font-main;
+}
+.second--font {
+	font-family: $font-second;
+}
+
+// Class colors
+.active--color {
+	color: $active;
+}
+.light--color {
+	color: $light;
+}
+.main_text--color {
+	color: $text-main;
+}
+.second_text--color {
+	color: $text-second;
+}
+.dark_text--color {
+	color: $text-dark;
+}
+.dark_text--color {
+	color: $text-dark;
+}
+
+//Button
+.main-btn {
+	position: relative;
+
+	display: inline-flex;
+	align-items: center;
+	height: 3.375rem;
+	padding: 0 1.875rem 0 2.875rem;
+
+	font-weight: bold;
+	font-family: $font-button;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	&:before, &:after  {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 3.375rem;
+		height: 3.375rem;
+
+		font-size: 1.875rem;
+		color: $active;
+
+		border-radius: 6.9375rem;
+	}
+	&:before{
+		content: '+';
+	}
+	&:after {
+		content: '';
+
+		background-color: rgba($soft, 0.05);
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+	&:active {
+		&:after {
+			background-color: rgba($soft, 0.3);
+		}
+	}
+}
