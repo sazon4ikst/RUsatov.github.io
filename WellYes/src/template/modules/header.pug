@@ -1,0 +1,20 @@
+header#header.header
+  //- Logo
+  +b.A.logo.center(href="/")
+    +e.IMG.img(src='/src/assets/images/logo.svg', alt="Well Yes")
+  +b.hamburger
+    +e.SPAN.elem
+    +e.SPAN.elem
+    +e.SPAN.elem
+  +b.header-container
+    //- Navigation
+    +b.NAV.navbar
+      +e.UL.list
+        each link in links
+          +e.LI.item
+            +e.A.link.main-link(href=link.url)=link.text
+
+    //- Phone Number
+    +b.phone.right
+      +e.A.number.center.nowrap(href='tel:' + number)=number
+      +e.IMG.icon(src='/src/assets/images/phone.svg')

@@ -1,0 +1,7 @@
+.main-link{
+  @include font(normal, 1rem,  0.875rem);
+  color: $active;
+  &:hover {
+    color: $active-hover;
+  }
+}

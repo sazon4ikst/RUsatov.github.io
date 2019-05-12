@@ -1,0 +1,16 @@
++b.FOOTER#footer.footer.footer--padding
+  +b.contacts.contacts--margin
+    +b.social.social--margin
+      each link in socialLinks
+        +e.A.link.social__link--margin(href=link.url)
+          +e.IMG.icon(src=link.src, alt=link.alt)
+    +e.A.phone.contacts__phone--margin(href=number)=number
+    +e.address.contacts__address--margin=address
+    +e.A.email.main-link(href='mailto: ' + email)=email
+  +b.NAV.navigation
+    each nav in footerNavLinks
+      +e.footer-block.navigation__footer-block--margin
+        +e.H4.title.navigation__title--margin.navigation__title--padding=nav.title
+        +e.subtitle-block
+          each footerLink in nav.links
+            +e.A.subtitle.navigation__subtitle--margin.navigation__subtitle--padding.main-link(href=footerLink.url)=footerLink.name
