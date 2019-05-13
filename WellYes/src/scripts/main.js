@@ -44,12 +44,6 @@ const mes = document.querySelectorAll('.message'),
 
 for (let i = 0; i < mes.length; i++) {
   mes[i].addEventListener('click', () => {
-    // let activeMessage = document.querySelector('.message__text--open'),
-    //     activeIcon = document.querySelector('.message__icon--open');
-    // if (activeMessage && activeIcon) {
-    //   activeMessage.classList.remove('message__text--open')
-    //   activeIcon.classList.remove('message__icon--open')
-    // }
     mesText[i].classList.toggle('message__text--open');
     icon[i].classList.toggle('message__icon--open')
   })
