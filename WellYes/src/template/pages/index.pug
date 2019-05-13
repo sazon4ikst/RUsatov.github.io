@@ -1,70 +1,74 @@
-block html
-  include ../common/mixins
-  .wrapper
-    include variables
 
-    //- Include header
-    include ../modules/header
+extends ../layouts/main.pug
 
-    //- Block with image
-    +b.SECTION#photo.photo
+block content
+  body
+    include ../common/mixins
+    .wrapper
+      include variables
 
-      +e.PICTURE.image
-        source(media="(min-width: 769px)" data-src="assets/images/apartsBig.jpg")
-        source(media="(min-width: 420px)" data-src="assets/images/apartsMedium.jpg")
-        img(data-src='assets/images/aparts.jpg' alt="aparts")
-      +b.description
-        +e.P.city.description--text Сочи
-        +e.P.aparts-type.description--text Апартаменты 1
+      //- Include header
+      include ../modules/header
 
-    //- Sidebar Menu
-    +b.ASIDE#menu.menu.content--padding.content--margin
-      +b.NAV.nav.nav--margin
-        +e.UL.list
-          each link in linksMenu
-            +e.LI.item.nav__item--margin
-              +e.A.link.main-link(href=link.url)=link.text
+      //- Block with image
+      +b.SECTION#photo.photo
 
-        //- Не совсем понял как этот блок должен работать, сделал простой div. Если потребуется - переделаю.
-        +e.notice.nav__notice--size.nav__notice--padding Уведомления
-          +e.SPAN.notice-counter.nav__notice-counter--size.nav__notice-counter--text 5
-      +b.address-block
-        each aparts in apartsInfo
-          +b.aparts.aparts--padding
-            .aparts--inline-block
-              +e.P.name.aparts__name--margin=aparts.name
-              .d-flex
-                +e.SPAN.address.aparts__address--margin=aparts.address
-                +e.BUTTON.btn Перейти
-                  +e.IMG.btn-icon(src='../../assets/images/icon-arrow.svg', alt="arrow-icon")
+        +e.PICTURE.image
+          source(media="(min-width: 769px)" data-src="assets/images/apartsBig.jpg")
+          source(media="(min-width: 420px)" data-src="assets/images/apartsMedium.jpg")
+          img(data-src='assets/images/aparts.jpg' alt="aparts")
+        +b.description
+          +e.P.city.description--text Сочи
+          +e.P.aparts-type.description--text Апартаменты 1
 
-    //- Main Content
-    +b.MAIN#main-content.main.main--padding.content--padding.content--margin
-      +e.H3.header.main__header--margin Уведомления
-      +b.noty
-        each mes in messageInfo
-          +b.message.message--margin.message--padding
-            +e.TIME.date.message__date--margin=mes.date
-            +e.SVG.icon(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
-              path(d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0V0ZM10 19.3333C8.77433 19.3333 7.56066 19.0919 6.42829 18.6229C5.29592 18.1538 4.26702 17.4663 3.40034 16.5997C2.53366 15.733 1.84617 14.7041 1.37712 13.5717C0.90808 12.4393 0.666667 11.2257 0.666667 10C0.666667 8.77433 0.90808 7.56066 1.37712 6.42829C1.84617 5.29592 2.53366 4.26702 3.40034 3.40034C4.26702 2.53366 5.29592 1.84617 6.42829 1.37712C7.56066 0.90808 8.77433 0.666667 10 0.666667C12.4754 0.666667 14.8493 1.65 16.5997 3.40034C18.35 5.15068 19.3333 7.52465 19.3333 10C19.3333 12.4754 18.35 14.8493 16.5997 16.5997C14.8493 18.35 12.4754 19.3333 10 19.3333Z" fill="#FFC000")
-              path(d="M8.69634 5.37619L8.69649 5.37604L8.693 5.37313C8.55895 5.26142 8.37281 5.25724 8.25387 5.37619C8.14159 5.48846 8.11156 5.69833 8.25535 5.82016L12.4254 10.0097L8.2554 14.1797C8.11761 14.2963 8.11644 14.5041 8.25188 14.6222C8.30582 14.6967 8.40206 14.7166 8.46532 14.7166C8.53349 14.7166 8.62589 14.6942 8.69634 14.6237L13.0989 10.2212C13.2162 10.1038 13.2162 9.89608 13.0989 9.77872L8.69634 5.37619Z" fill="#FFC000" stroke="#FFC000" stroke-width="0.1")
-            +e.H4.title=mes.title
-            +e.P.text=mes.descr
+      //- Sidebar Menu
+      +b.ASIDE#menu.menu.content--padding.content--margin
+        +b.NAV.nav.nav--margin
+          +e.UL.list
+            each link in linksMenu
+              +e.LI.item.nav__item--margin
+                +e.A.link.main-link(href=link.url)=link.text
 
-    //- News slider
-    +b.SECTION#news.news.news--padding
-      +e.slider
-        .swiper-wrapper
-          each slide in news
-            +e.A.slide.swiper-slide(href=slide.link)
-              +e.block
-                +e.TIME.date.news__date--margin=slide.date
-                if slide.promotion
-                  +e.SPAN.promotion.news--text Акция
-                unless slide.promotion
-                  +e.SPAN.type.news--text Новости
-                +e.P.descr.news__descr--margin=slide.descr
-        +e.pagination.swiper-pagination
+          //- Не совсем понял как этот блок должен работать, сделал простой div. Если потребуется - переделаю.
+          +e.notice.nav__notice--size.nav__notice--padding Уведомления
+            +e.SPAN.notice-counter.nav__notice-counter--size.nav__notice-counter--text 5
+        +b.address-block
+          each aparts in apartsInfo
+            +b.aparts.aparts--padding
+              .aparts--inline-block
+                +e.P.name.aparts__name--margin=aparts.name
+                .d-flex
+                  +e.SPAN.address.aparts__address--margin=aparts.address
+                  +e.BUTTON.btn Перейти
+                    +e.IMG.btn-icon(src='../../assets/images/icon-arrow.svg', alt="arrow-icon")
 
-    //- Footer
-    include ../modules/footer
+      //- Main Content
+      +b.MAIN#main-content.main.main--padding.content--padding.content--margin
+        +e.H3.header.main__header--margin Уведомления
+        +b.noty
+          each mes in messageInfo
+            +b.message.message--margin.message--padding
+              +e.TIME.date.message__date--margin=mes.date
+              +e.SVG.icon(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+                path(d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0V0ZM10 19.3333C8.77433 19.3333 7.56066 19.0919 6.42829 18.6229C5.29592 18.1538 4.26702 17.4663 3.40034 16.5997C2.53366 15.733 1.84617 14.7041 1.37712 13.5717C0.90808 12.4393 0.666667 11.2257 0.666667 10C0.666667 8.77433 0.90808 7.56066 1.37712 6.42829C1.84617 5.29592 2.53366 4.26702 3.40034 3.40034C4.26702 2.53366 5.29592 1.84617 6.42829 1.37712C7.56066 0.90808 8.77433 0.666667 10 0.666667C12.4754 0.666667 14.8493 1.65 16.5997 3.40034C18.35 5.15068 19.3333 7.52465 19.3333 10C19.3333 12.4754 18.35 14.8493 16.5997 16.5997C14.8493 18.35 12.4754 19.3333 10 19.3333Z" fill="#FFC000")
+                path(d="M8.69634 5.37619L8.69649 5.37604L8.693 5.37313C8.55895 5.26142 8.37281 5.25724 8.25387 5.37619C8.14159 5.48846 8.11156 5.69833 8.25535 5.82016L12.4254 10.0097L8.2554 14.1797C8.11761 14.2963 8.11644 14.5041 8.25188 14.6222C8.30582 14.6967 8.40206 14.7166 8.46532 14.7166C8.53349 14.7166 8.62589 14.6942 8.69634 14.6237L13.0989 10.2212C13.2162 10.1038 13.2162 9.89608 13.0989 9.77872L8.69634 5.37619Z" fill="#FFC000" stroke="#FFC000" stroke-width="0.1")
+              +e.H4.title=mes.title
+              +e.P.text=mes.descr
+
+      //- News slider
+      +b.SECTION#news.news.news--padding
+        +e.slider
+          .swiper-wrapper
+            each slide in news
+              +e.A.slide.swiper-slide(href=slide.link)
+                +e.block
+                  +e.TIME.date.news__date--margin=slide.date
+                  if slide.promotion
+                    +e.SPAN.promotion.news--text Акция
+                  unless slide.promotion
+                    +e.SPAN.type.news--text Новости
+                  +e.P.descr.news__descr--margin=slide.descr
+          +e.pagination.swiper-pagination
+
+      //- Footer
+      include ../modules/footer
