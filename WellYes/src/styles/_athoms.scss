@@ -1,7 +1,8 @@
-.main-link{
-  @include font(normal, 1rem,  0.875rem);
-  color: $active;
-  &:hover {
-    color: $active-hover;
-  }
+.main-link {
+	color: $active;
+
+	@include font(normal, 1rem,  0.875rem);
+	&:hover {
+		color: $active-hover;
+	}
 }

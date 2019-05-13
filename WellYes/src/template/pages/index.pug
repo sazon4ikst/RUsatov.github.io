@@ -1,5 +1,3 @@
-extends ../layouts/main
-
 block html
   include ../common/mixins
   .wrapper
@@ -10,10 +8,11 @@ block html
 
     //- Block with image
     +b.SECTION#photo.photo
+
       +e.PICTURE.image
-        source(media="(min-width: 769px)" data-src="/src/assets/images/apartsBig.jpg")
-        source(media="(min-width: 420px)" data-src="/src/assets/images/apartsMedium.jpg")
-        img(data-src='/src/assets/images/aparts.jpg' alt="aparts")
+        source(media="(min-width: 769px)" data-src="assets/images/apartsBig.jpg")
+        source(media="(min-width: 420px)" data-src="assets/images/apartsMedium.jpg")
+        img(data-src='assets/images/aparts.jpg' alt="aparts")
       +b.description
         +e.P.city.description--text Сочи
         +e.P.aparts-type.description--text Апартаменты 1
@@ -34,9 +33,10 @@ block html
           +b.aparts.aparts--padding
             .aparts--inline-block
               +e.P.name.aparts__name--margin=aparts.name
-              +e.SPAN.address.aparts__address--margin=aparts.address
-              +e.BUTTON.btn Перейти
-                +e.IMG.btn-icon(src='/src/assets/images/icon-arrow.svg', alt="arrow-icon")
+              .d-flex
+                +e.SPAN.address.aparts__address--margin=aparts.address
+                +e.BUTTON.btn Перейти
+                  +e.IMG.btn-icon(src='../../assets/images/icon-arrow.svg', alt="arrow-icon")
 
     //- Main Content
     +b.MAIN#main-content.main.main--padding.content--padding.content--margin

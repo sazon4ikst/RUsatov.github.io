@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
@@ -14,30 +15,49 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-
       {
-        test: /\.pug$/,
-        use: [
-          "html-loader",
-          "pug-html-loader"
+        test: /\.pug/,
+        loaders: [
+          'html-loader',
+          'pug-html-loader'
         ]
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
-            MiniCssExtractPlugin.loader,
-            // "style-loader", // style nodes from js strings
-            "css-loader",
-            "sass-loader"
+          {
+           loader: 'style-loader'
+          },
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true, url: false }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                autoprefixer({
+                    browsers:['> 1%', 'last 3 version']
+                })
+              ],
+              sourceMap: true,
+              url: false,
+               }
+          }, {
+            loader: 'sass-loader',
+            options: { sourceMap: true, url: false }
+          }
         ]
       },
       {
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]'
+              name: 'assets/images/[name].[ext]',
+              url: false
             }
           },
           {
@@ -69,8 +89,6 @@ module.exports = {
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
       options: {
         minimize: true
       },

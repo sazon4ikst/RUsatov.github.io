@@ -1,3 +1,4 @@
+import Swiper from "./swiper.min.js";
 // Hamburger button (Mobile)
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.header-container');

@@ -1,137 +1,147 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo {
-  padding-left: 1.5625rem;
+	padding-left: 1.5625rem;
 }
 
 .hamburger {
-  display: none;
-  position: relative;
-  width: 2.4375rem;
-  height: 1.3813rem;
-  cursor: pointer;
-  margin-right: 2.5rem;
+	position: relative;
 
-  @media (max-width: 768px) {
-    display: block;
-  }
-  @media (max-width: 525px) {
-    margin-right: 0.75rem;
-  }
+	display: none;
+	width: 2.4375rem;
+	height: 1.3813rem;
+	margin-right: 2.5rem;
 
-  &--active {
-    .hamburger__elem {
-      &:first-child {
-        top: calc(50% - 0.125rem);
-        transform: rotate(45deg);
-      }
+	cursor: pointer;
 
-      &:nth-child(2) {
-        transform: scaleX(0);
-      }
+	@media (max-width: 48rem) {
+		display: block;
+	}
+	@media (max-width: 32.8125rem) {
+		margin-right: 0.75rem;
+	}
 
-      &:last-child {
-        bottom: calc(50% - 0.125rem);
-        transform: rotate(-45deg);
-      }
-    }
-  }
+	&--active {
+		.hamburger__elem {
+			&:first-child {
+				top: calc(50% - 0.125rem);
 
-  &__elem {
-    position: absolute;
-    left: 0;
-    width: 2.4375rem;
-    height: 0.25rem;
-    background-color: $active;
+				transform: rotate(45deg);
+			}
 
-    &:first-child {
-      top: 0;
-    }
+			&:nth-child(2) {
+				transform: scaleX(0);
+			}
 
-    &:nth-child(2) {
-      top: 50%;
-      transform: scaleX(1) translateY(-50%);
-    }
+			&:last-child {
+				bottom: calc(50% - 0.125rem);
 
-    &:last-child {
-      bottom: 0;
-    }
-  }
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__elem {
+		position: absolute;
+		left: 0;
+
+		width: 2.4375rem;
+		height: 0.25rem;
+
+		background-color: $active;
+
+		&:first-child {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+			top: 50%;
+
+			transform: scaleX(1) translateY(-50%);
+		}
+
+		&:last-child {
+			bottom: 0;
+		}
+	}
 }
 
 .header-container {
-  display: flex;
-  flex: auto;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 5.625rem;
-    background-color: $bg-header;
-    padding: 1.3125rem;
-    transform: scaleY(0);
-    transform-origin: 50% 0;
-    z-index: 10;
-  }
-  &--active{
-    transform: scaleY(1);
-  }
+	display: flex;
+	flex: auto;
+	@media (max-width: 48rem) {
+		position: absolute;
+		top: 5.625rem;
+		z-index: 10;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding: 1.3125rem;
+		overflow: hidden;
+
+		background-color: $bg-header;
+		transform: scaleY(0);
+		transform-origin: 50% 0;
+	}
+	&--active {
+		transform: scaleY(1);
+	}
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  padding: 0 3.75rem;
-  flex: auto;
+	display: flex;
+	flex: auto;
+	align-items: center;
+	padding: 0 3.75rem;
 
-  @media (max-width: 900px) {
-    padding: 0 1.5rem;
-  }
+	@media (max-width: 56.25rem) {
+		padding: 0 1.5rem;
+	}
 
-  &__list {
-    display: flex;
+	&__list {
+		display: flex;
 
-    @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+		@media (max-width: 48rem) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
-  &__item {
-    @media (max-width: 768px) {
-      margin-right: 0 !important;
-      margin-top: 1.75rem;
-    }
-    &:not(:last-child) {
-      margin-right: 4rem;
-      @media (max-width: 900px) {
-        margin-right: 1.5rem;
-      }
-    }
-  }
+	&__item {
+		@media (max-width: 48rem) {
+			margin-top: 1.75rem;
+			margin-right: 0 !important;
+		}
+		&:not(:last-child) {
+			margin-right: 4rem;
+			@media (max-width: 56.25rem) {
+				margin-right: 1.5rem;
+			}
+		}
+	}
 }
 
 .phone {
-  padding-right: 3.125rem;
-  @media (max-width: 768px) {
-    padding: 4rem 0 0;
-  }
+	padding-right: 3.125rem;
+	@media (max-width: 48rem) {
+		padding: 4rem 0 0;
+	}
 
-  &__number {
-    @include font(bold, 1.5rem, 1.5rem);
-    margin-right: 0.625rem;
-  }
+	&__number {
+		margin-right: 0.625rem;
 
-  &__icon {
-    width: 1.875rem;
-    height: 1.875rem;
-  }
+		@include font(bold, 1.5rem, 1.5rem);
+	}
+
+	&__icon {
+		width: 1.875rem;
+		height: 1.875rem;
+	}
 }
