@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Cera Round Pro DEMO';
+    src: url('CeraRoundProDEMO-Medium.eot');
+    src: url('CeraRoundProDEMO-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundProDEMO-Medium.woff2') format('woff2'),
+        url('CeraRoundProDEMO-Medium.woff') format('woff'),
+        url('CeraRoundProDEMO-Medium.ttf') format('truetype'),
+        url('CeraRoundProDEMO-Medium.svg#CeraRoundProDEMO-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro DEMO';
+    src: url('CeraRoundProDEMO-Bold.eot');
+    src: url('CeraRoundProDEMO-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundProDEMO-Bold.woff2') format('woff2'),
+        url('CeraRoundProDEMO-Bold.woff') format('woff'),
+        url('CeraRoundProDEMO-Bold.ttf') format('truetype'),
+        url('CeraRoundProDEMO-Bold.svg#CeraRoundProDEMO-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro DEMO';
+    src: url('CeraRoundProDEMO-Black.eot');
+    src: url('CeraRoundProDEMO-Black.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundProDEMO-Black.woff2') format('woff2'),
+        url('CeraRoundProDEMO-Black.woff') format('woff'),
+        url('CeraRoundProDEMO-Black.ttf') format('truetype'),
+        url('CeraRoundProDEMO-Black.svg#CeraRoundProDEMO-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro DEMO';
+    src: url('CeraRoundProDEMO-Thin.eot');
+    src: url('CeraRoundProDEMO-Thin.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundProDEMO-Thin.woff2') format('woff2'),
+        url('CeraRoundProDEMO-Thin.woff') format('woff'),
+        url('CeraRoundProDEMO-Thin.ttf') format('truetype'),
+        url('CeraRoundProDEMO-Thin.svg#CeraRoundProDEMO-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro DEMO';
+    src: url('CeraRoundProDEMO-Regular.eot');
+    src: url('CeraRoundProDEMO-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundProDEMO-Regular.woff2') format('woff2'),
+        url('CeraRoundProDEMO-Regular.woff') format('woff'),
+        url('CeraRoundProDEMO-Regular.ttf') format('truetype'),
+        url('CeraRoundProDEMO-Regular.svg#CeraRoundProDEMO-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro DEMO';
+    src: url('CeraRoundProDEMO-Light.eot');
+    src: url('CeraRoundProDEMO-Light.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundProDEMO-Light.woff2') format('woff2'),
+        url('CeraRoundProDEMO-Light.woff') format('woff'),
+        url('CeraRoundProDEMO-Light.ttf') format('truetype'),
+        url('CeraRoundProDEMO-Light.svg#CeraRoundProDEMO-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('Geometria.eot');
+    src: url('Geometria.eot?#iefix') format('embedded-opentype'),
+        url('Geometria.woff2') format('woff2'),
+        url('Geometria.woff') format('woff'),
+        url('Geometria.ttf') format('truetype'),
+        url('Geometria.svg#Geometria') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
