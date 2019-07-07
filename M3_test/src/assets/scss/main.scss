@@ -1,0 +1,150 @@
+@import 'utils/libs';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/reset';
+@import 'utils/custom';
+
+html {
+	height: 100%;
+
+	font-size: $mainFontSize;
+	line-height: $mainLineHeight;
+	color: $mainFontColor;
+	overflow-x: hidden;
+
+	@media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+	}
+
+	@media screen and (max-width: $tableWidth) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: $phoneWidth) {
+		font-size: 12px;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+
+	font-weight: $mainFontWeight;
+	font-size: $mainFontSize;
+	font-family: $mainFont;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container-fluid {
+	position: relative;
+
+	flex: 0 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.container {
+	position: relative;
+
+	flex: 0 0 auto;
+	width: 100%;
+	max-width: $desktopWidth;
+	margin: 0 auto;
+
+	@media screen and (max-width: $smDesktopWidth) {
+		max-width: tableWidth;
+	}
+
+	@media screen and (max-width: $tableWidth) {
+		max-width: phoneWidth;
+	}
+
+	@media screen and (max-width: $phoneWidth) {
+		max-width: smPhoneWidth;
+	}
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-content-start {
+	justify-content: flex-start !important;
+}
+
+.justify-content-center {
+	justify-content: center !important;
+}
+
+.justify-content-end {
+	justify-content: flex-end !important;
+}
+
+.align-items-start {
+	align-items: flex-start !important;
+}
+
+.align-items-center {
+	align-items: center !important;
+}
+
+.align-items-end {
+	align-items: flex-end !important;
+}
+
+.flex-column {
+	flex-direction: column !important;
+}
+
+.flex-row {
+	flex-direction: row !important;
+}
+
+// Modules
+// @import "modules/my-module.scss";
